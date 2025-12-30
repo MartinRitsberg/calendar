@@ -7,8 +7,10 @@
 }
 
 main {
+  min-height: 100vh;
   height: 100%;
   width: 100vw;
+  background-color: #00873e;
 }
 
 #calendar-header {
@@ -90,7 +92,6 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
-  background-color: #00873e;
 }
 
 .calendar-day {
