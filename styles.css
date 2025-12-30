@@ -101,6 +101,8 @@ main {
   border-radius: 15px;
   background-color: #d6001c;
   cursor: pointer;
+  background-position: center;
+  background-size: cover;
 }
 
 .calendar-day:hover {

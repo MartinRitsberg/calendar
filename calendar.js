@@ -15,4 +15,6 @@ function openDay() {
 
 for (const day of calendarDays) {
   day.addEventListener("click", openDay);
+  const image = imagePath + day.dataset.image + imageExt;
+  day.style.backgroundImage = `url(${image})`;
 }
