@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100vw;
+}
+
+#calendar-header {
+  height: 80px;
+  width: 100%;
+  background-color: #004b23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calendar-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+#calendar-modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  max-height: 80vh;
+  max-width: 90vw;
+  border: 2px solid gray;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#calendar-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#calendar-modal-image {
+  max-height: 90vh;
+  max-width: 90vw;
+}
+
+#calendar-modal-text {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#calendar-modal-form {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#calendar-modal-form-button {
+  height: 40px;
+  width: 100px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: #004b23;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#calendar-modal-form-button:hover {
+  background-color: #00642f;
+}
+
+#calendar-container {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  background-color: #00873e;
+}
+
+.calendar-day {
+  height: 200px;
+  width: 200px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  background-color: #d6001c;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  background-color: #bd0019;
+}
+
+.calendar-day-image {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.calendar-day-number {
+  position: relative;
+  top: -90%;
+  left: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  pointer-events: none;
+}
