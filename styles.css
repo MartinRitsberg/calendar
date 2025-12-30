@@ -123,4 +123,5 @@ main {
   font-weight: bold;
   color: white;
   pointer-events: none;
+  text-shadow: #d6001c 0px 0px 8px;
 }
